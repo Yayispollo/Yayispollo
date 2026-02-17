@@ -1,6 +1,6 @@
 body {
-    background-color: #0F0094;
-    color: #FFFCB9;
+    background-color: #E1FF61;
+    color:#0115FF ;
     font-family: "placa", sans-serif;
 font-weight: 400;
 font-style: normal;
@@ -11,12 +11,19 @@ h1 {
     font-variation-settings: "SEED" 0, "wdth" 100;
 }
 header{
-    font-size: 20px;
+    font-size: 16px;
 
 }
 h1{
-    font-size: 3em;
+    width: 100%;
+    text-align: center;
+    font-size: 18vw;
 }
 p{
     line-height: 1em;
+}
+main{
+   width: 100%;
+   max-width: 800px;
+   margin: 0 auto;
 }
