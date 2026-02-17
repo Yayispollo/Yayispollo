@@ -1,0 +1,22 @@
+body {
+    background-color: #0F0094;
+    color: #FFFCB9;
+    font-family: "placa", sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+
+h1 {
+    font-family: "kuhlman-vf", sans-serif;
+    font-variation-settings: "SEED" 0, "wdth" 100;
+}
+header{
+    font-size: 20px;
+
+}
+h1{
+    font-size: 3em;
+}
+p{
+    line-height: 1em;
+}
