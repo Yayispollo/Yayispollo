@@ -1,29 +1,76 @@
-body {
-    background-color: #E1FF61;
-    color:#0115FF ;
-    font-family: "placa", sans-serif;
-font-weight: 400;
-font-style: normal;
+:root {
+    --font-family: "placa", sans-serif;
+    --font-title:"kuhlman-vf", sans-serif;
+    --accent-color: #ffffff;
+    --background-color:  #E1FF61;
+    --color-text: #0115FF;
 }
 
+html {
+    font-size: 30px;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--color-text);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-style: normal;
+}
+main{
+    width: 80%;
+
+}
 h1 {
     font-family: "kuhlman-vf", sans-serif;
     font-variation-settings: "SEED" 0, "wdth" 100;
 }
-header{
+
+header {
     font-size: 16px;
 
 }
-h1{
+
+h1 {
     width: 100%;
     text-align: center;
-    font-size: 18vw;
+    font-size: 4em;
 }
-p{
+
+p {
     line-height: 1em;
+    max-width: 60ch;
 }
-main{
-   width: 100%;
-   max-width: 800px;
-   margin: 0 auto;
+
+main {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+a{
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    margin: 2em;
+    width: 300px;
+    border: 2px solid var(--color-text);
+    color: var(--accent-color);
+    background-color: var(--accent-color);
+    transition: all 0.5s ease-in-out;
+}
+a:hover{
+    color: var(--color-text);
+    opacity: 0.8;
+}
+a:visited{
+    color: var(--color-text);
+    opacity: 0.8;
+}
+a:focus{
+    color: var(--background-color);
+    background-color: var(--background-color);
+}
+a:active{
+    color: var(--color-text);
+    opacity: 0.8;
 }
