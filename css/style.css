@@ -1,21 +1,47 @@
 :root {
     --font-family: "placa", sans-serif;
     --font-title:"kuhlman-vf", sans-serif;
-    --accent-color: #ffffff;
-    --background-color:  #E1FF61;
-    --color-text: #0115FF;
+    --accent-color: #fabbde;
+    --background-color:  hsl(0, 0%, 100%);
+    --color-text: #ff01ff;
 }
 
 html {
-    font-size: 30px;
+    font-size: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
 }
+
+@media (min-width:768px) {
+body    {
+        font-size: 1.5rem;
+    }
+
+}
+@media (min-width:1024px) {
+body {
+        font-size: 1.7rem;
+    }
+    
+}
+
+
 
 body {
     background-color: var(--background-color);
     color: var(--color-text);
+    background-image: url("/img/nube-removebg-preview.png");
     font-family: var(--font-family);
     font-weight: 400;
     font-style: normal;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+@media (max-width:700px) {
+body {
+        background-color: rgb(255, 196, 0);
+    }
 }
 main{
     width: 80%;
@@ -39,7 +65,8 @@ h1 {
 
 p {
     line-height: 1em;
-    max-width: 60ch;
+    max-width: 80ch;
+    
 }
 
 main {
