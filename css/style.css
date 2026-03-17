@@ -1,9 +1,9 @@
 :root {
     --font-family: "placa", sans-serif;
-    --font-title:"kuhlman-vf", sans-serif;
-    --accent-color: #fabbde;
-    --background-color:  hsl(0, 0%, 100%);
-    --color-text: #ff01ff;
+    --font-title:"bestia-display", sans-serif;
+    --accent-color: #000000;
+    --background-color:  hwb(0 100% 0%);
+    --color-text: hwb(8 16% 0%);
 }
 
 html {
@@ -31,7 +31,6 @@ body {
 body {
     background-color: var(--background-color);
     color: var(--color-text);
-    background-image: url("/img/nube-removebg-preview.png");
     font-family: var(--font-family);
     font-weight: 400;
     font-style: normal;
@@ -48,7 +47,7 @@ main{
 
 }
 h1 {
-    font-family: "kuhlman-vf", sans-serif;
+    font-family: var(--font-title);
     font-variation-settings: "SEED" 0, "wdth" 100;
 }
 
