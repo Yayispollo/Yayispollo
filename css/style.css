@@ -1,9 +1,16 @@
 :root {
     --font-family: "placa", sans-serif;
-    --font-title:"bestia-display", sans-serif;
+    --font-title: "bestia-display", sans-serif;
     --accent-color: #000000;
-    --background-color:  hwb(0 100% 0%);
-    --color-text: hwb(8 16% 0%);
+    --background-color: #19191d;
+    --color-text: #ffffff;
+    --accent-color: #fa29ae;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -13,18 +20,7 @@ html {
 
 }
 
-@media (min-width:768px) {
-body    {
-        font-size: 1.5rem;
-    }
 
-}
-@media (min-width:1024px) {
-body {
-        font-size: 1.7rem;
-    }
-    
-}
 
 
 
@@ -37,15 +33,23 @@ body {
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
 @media (max-width:700px) {
-body {
+    body {
         background-color: rgb(255, 196, 0);
     }
 }
-main{
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+main {
     width: 80%;
 
 }
+
 h1 {
     font-family: var(--font-title);
     font-variation-settings: "SEED" 0, "wdth" 100;
@@ -65,15 +69,16 @@ h1 {
 p {
     line-height: 1em;
     max-width: 80ch;
-    
+
 }
 
 main {
     width: 100%;
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
 }
-a{
+
+a {
     border-radius: 5px;
     text-align: center;
     display: inline-block;
@@ -84,20 +89,93 @@ a{
     background-color: var(--accent-color);
     transition: all 0.5s ease-in-out;
 }
-a:hover{
+
+a:hover {
     color: var(--color-text);
     opacity: 0.8;
 }
-a:visited{
+
+a:visited {
     color: var(--color-text);
     opacity: 0.8;
 }
-a:focus{
+
+a:focus {
     color: var(--background-color);
     background-color: var(--background-color);
 }
-a:active{
+
+a:active {
     color: var(--color-text);
     opacity: 0.8;
 }
+
 /* git pull origin main */
+
+/* Hero Section */
+
+.hero {
+    min-height: 100vh;
+
+}
+
+.hero-content h1 {
+    line-height: 100%;
+
+    margin-bottom: 2rem;
+}
+
+.hero-content p span {
+    color: var(--accent-color);
+}
+
+
+/* nav */
+
+.navbar {
+    bottom: 0;
+    width: 100%;
+
+    padding: 1em 0;
+    z-index: 1000;
+}
+
+/* tablet */
+@media (min-width:768px) {
+    body {
+        font-size: 1.5rem;
+    }
+
+    .hero {
+        position: relative;
+        flex-direction: row;
+
+    }
+
+    .hero-content {
+        max-width: 50%;
+        padding: 2em;
+    }
+
+    .hero-image-container {
+        position: absolute;
+        max-width: 50%;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+
+
+    }
+
+    .navbar {
+        position: fixed;
+    }
+}
+
+/* desktop */
+@media (min-width:1024px) {
+    body {
+        font-size: 1.7rem;
+    }
+
+}
