@@ -1,10 +1,9 @@
 :root {
     --font-family: "placa", sans-serif;
     --font-title: "bestia-display", sans-serif;
-    --accent-color: #000000;
-    --background-color: #19191d;
-    --color-text: #ffffff;
-    --accent-color: #fa29ae;
+    --primary-color: #fa29ae;        /* Rosa/magenta */
+    --background-color: #19191d;     /* Gris oscuro */
+    --color-text: #ffffff;           /* Blanco */
 }
 
 * {
@@ -17,14 +16,10 @@ html {
     font-size: 100%;
     box-sizing: border-box;
     scroll-behavior: smooth;
-
 }
 
-
-
-
-
 body {
+    display: block ;
     background-color: var(--background-color);
     color: var(--color-text);
     font-family: var(--font-family);
@@ -32,8 +27,20 @@ body {
     font-style: normal;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    font-size: 1.75rem;
+    background-image: url(../img/background_yaya.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
 }
 
+@media (min-width: 768px) {
+    body {
+        background-position: 86% center;
+        background-size: auto 100%;
+        background-attachment: fixed;
+    }
+}
 
 img {
     max-width: 100%;
@@ -41,102 +48,173 @@ img {
 }
 
 main {
-    width: 80%;
-
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
 }
 
 h1 {
     font-family: var(--font-title);
     font-variation-settings: "SEED" 0, "wdth" 100;
-}
-
-header {
-    font-size: 16px;
-
-}
-
-h1 {
     width: 100%;
     text-align: center;
     font-size: 4em;
 }
 
+header {
+    font-size: 16px;
+}
+
 p {
-    line-height: 1em;
+   
+    line-height: 1.1em;
     max-width: 80ch;
-
+    margin-bottom: 0.75em;
 }
 
-main {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
+/* ===== Enlaces/BOTONES ===== */
 a {
     border-radius: 5px;
     text-align: center;
     display: inline-block;
-    margin: 0.5em;
-     margin-left: auto;
+
+    padding: 1em 1.5em;
     width: 300px;
-    border: 2px solid var(--color-text);
-    color: var(--accent-color);
-    background-color: var(--accent-color);
+    border: 2px solid var(--primary-color);
+    margin-right: 0.5em;
+ 
+    color: var(--color-text);           
+    background-color: var(--primary-color); 
+    
     transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 a:hover {
-    color: var(--color-text);
-    opacity: 0.8;
+
+    color: var(--primary-color);       
+    background-color: var(--background-color); 
+    opacity: 1;
 }
 
 a:visited {
     color: var(--color-text);
-    opacity: 0.8;
 }
 
 a:focus {
-    color: var(--background-color);
-    background-color: var(--background-color);
+    /* Para accesibilidad: borde visible al enfocar */
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
 }
 
 a:active {
-    color: var(--color-text);
-    opacity: 0.8;
+    transform: scale(0.58);
 }
 
-/* git pull origin main */
-
-/* Hero Section */
-
+/* ===== HERO SECTION ===== */
 .hero {
     min-height: 100vh;
-
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 .hero-content h1 {
     line-height: 100%;
     margin-bottom: 3rem;
-    
+    font-size: min(16vw, 4em);
 }
+.hero-content{
 
+     width: 100%;
+}
+.hero-subtitle {
+    margin-top: 55dvh;
+  
+}
+.h2 {   
+     display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;}
+
+@media (min-width: 768px) {
+    .hero-subtitle {
+        margin-top: 0;
+    }
+}
 .hero-content p span {
-    color: var(--accent-color);
+    color: var(--primary-color);
 }
 
-
-/* nav */
-
+/* ===== NAVBAR ===== */
 .navbar {
     bottom: 0;
-    width: 100%;    left: 20%;
-    padding: 1em 0;
+    width: 100%;
+    
     z-index: 1000;
+    background-color: rgba(25, 25, 29, 0.95);
 }
 
-/* tablet */
-@media (min-width:768px) {
+.hero-image-container {
+    background-image: url('/img/Practica 3-2.jpg');
+    background-size: cover;        /* Cubre todo el contenedor */
+    background-position: center;   /* Centra la imagen */
+    background-repeat: no-repeat;  /* No se repite */
+    background-attachment: fixed;  /* Efecto parallax (opcional) */
+    
+    position: absolute;
+    max-width: 50%;
+    bottom: 0;
+    right: 10%;
+    z-index: -1;
+    
+    width: 100%;
+    height: 100%;
+}
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logo {
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.div.div.contact-links{
+    display: flex;
+   
+}
+.nav-menu a {
+    width: auto;
+    padding: 0.75em 1.5em;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== TABLET ===== */
+@media (min-width: 768px) {
     body {
         font-size: 1.5rem;
     }
@@ -144,12 +222,11 @@ a:active {
     .hero {
         position: relative;
         flex-direction: row;
-
     }
 
     .hero-content {
         max-width: 50%;
-        padding: 3em;
+      
     }
 
     .hero-image-container {
@@ -158,20 +235,22 @@ a:active {
         bottom: 0;
         right: 10%;
         z-index: -1;
-
-
     }
-
 
     .navbar {
         position: fixed;
+      
     }
+
+    .nav-menu a {
+        width: auto;
+    }
+
 }
 
-/* desktop */
-@media (min-width:1024px) {
+/* ===== DESKTOP ===== */
+@media (min-width: 1024px) {
     body {
         font-size: 1.5rem;
     }
-
 }
