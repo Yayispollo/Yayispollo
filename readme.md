@@ -2,8 +2,15 @@
 
 ## Salutaciones!
 **Mi nombre es Stefany Mendoza**
-Estudiante de computación creativa en CENTRO,soy artista, animadora y diesñadora web.
-Hago dibujos digitles desde hace 6 años.Puesdes echarle un vistazo a mis redes.
+Desde pequeña me dicen Yayis. Soy de Texcoco y siempre me ha apasionado diseñar y crear. También disfruto mucho hacer deporte y salir con mis amigos.
+
+Realmente espero lograr cosas grandes con ayuda del medio digital. Quiero que el mundo me conozca y también conozca mi arte.
+
+Soy de las personas que creen que, cuando tienes pasión, puedes encontrar el arte en cada una de tus acciones. Creo que es posible conectar con muchas personas a través de una imagen y sus colores, y que todo en esta vida debe tener un concepto importante que refleje nuestros pensamientos e ideas.
+
+Actualmente soy estudiante de Computación Creativa en CENTRO. Soy artista, animadora y diseñadora web. Hago dibujos digitales desde hace 6 años, y me gustaría seguir creciendo en el mundo de la animación tanto en 2D como en 3D.
+
+Puedes echarle un vistazo a mis redes.
 
 ## Habilidades
 1. Tocar guitarra
